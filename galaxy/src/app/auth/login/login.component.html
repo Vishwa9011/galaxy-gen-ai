@@ -1,0 +1,16 @@
+<div class="position-relative min-vh-100">
+     <form (submit)="login()" class="container border rounded-1 p-4 position-absolute top-50 start-50 translate-middle"
+          style="width:30rem;">
+          <h1 class="text-center">Login</h1>
+          <div class="mb-3">
+               <label for="username" class="form-label">Username</label>
+               <input [(ngModel)]="username" name="username" type="text" class="form-control" id="username"
+                    aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+               <label for="password" class="form-label">Password</label>
+               <input [(ngModel)]="password" name="password" type="password" class="form-control" id="password">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+     </form>
+</div>

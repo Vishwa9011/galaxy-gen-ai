@@ -1,0 +1,27 @@
+<div class="position-relative min-vh-100" styles="">
+
+     <form (submit)="register()"
+          class="container border rounded-1 p-4 position-absolute top-50 start-50 translate-middle"
+          style="width:35rem;">
+          <h1 class="text-center">Singup</h1>
+          <div class="mb-3">
+               <label for="username" class="form-label">Username</label>
+               <input type="text" [(ngModel)]="username" name="username" class="form-control" id="username"
+                    aria-describedby="emailHelp">
+          </div>
+          <div class="input-group mb-3">
+               <label class="input-group-text" for="user-role">Select the Role</label>
+               <select [(ngModel)]="role" name="role" class="form-select" id="user-role">
+                    <option selected disabled>Choose ...</option>
+                    <option value="user">User</option>
+                    <option value="theater-owner">Theater Owner</option>
+                    <option value="admin">Admin</option>
+               </select>
+          </div>
+          <div class="mb-3">
+               <label for="password" class="form-label">Password</label>
+               <input type="password" name="password" [(ngModel)]="password" class="form-control" id="password">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+     </form>
+</div>
